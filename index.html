@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="form__wrapper">
+          <h1 class="header">Обратная форма</h1>
+          <form action="" class="form" id="feedbackForm">
+            <div class="form-input">
+              <input required name="name" id="name" type="text" />
+              <label for="name">ФИО</label>
+            </div>
+            <div class="form-input">
+              <input required name="phone" id="phone" type="tel" />
+              <label for="phone">Телефон</label>
+            </div>
+            <div class="form-input">
+              <input required name="email" id="email" type="email" />
+              <label for="email">E-mail</label>
+            </div>
+            <div class="form-textarea">
+              <textarea name="text" id="message"></textarea>
+              <label for="text">Сообщение</label>
+            </div>
+          </form>
+          <div class="form__text">
+            Отправляя форму, Вы соглашаетесь на
+            <span>обработку персональных данных</span>
+          </div>
+          <button type="submit" class="btn">Отправить</button>
+        </div>
+      </div>
+    </main>
+    <script type="module" src="./js/index.js"></script>
+  </body>
+</html>
